@@ -1,0 +1,22 @@
+# Packet captures contain real traffic: credentials, cookies, DNS history,
+# device names and IPs. Never commit your own captures by accident.
+*.pcap
+*.pcapng
+*.cap
+*.pcap.gz
+*.etl
+
+# TLS key logs let anyone decrypt the matching capture
+sslkeylog*
+*.keylog
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
