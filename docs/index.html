@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>misentropy: security portfolio</title>
+<meta name="description" content="Hands-on cybersecurity learning projects: network traffic analysis, SDR and Python automation.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <p class="eyebrow">misentropy / portfolio</p>
+  <h1>Learning security by watching the wire.</h1>
+  <p class="lede">I'm a junior cybersecurity enthusiast with a background in radio communications. I learn by running experiments in authorised lab environments and writing down what I find.</p>
+  <p class="links">
+    <a class="btn" href="https://github.com/misentropy/project">GitHub repository</a>
+    <a class="btn ghost" href="#wireshark">Current project</a>
+  </p>
+</header>
+
+<main>
+
+<section id="about">
+  <h2>Focus areas</h2>
+  <ul class="chips">
+    <li>Network security &amp; traffic analysis</li>
+    <li>Threat analysis &amp; incident response</li>
+    <li>Python automation</li>
+    <li>SDR &amp; RF monitoring</li>
+    <li>Secure communications</li>
+  </ul>
+</section>
+
+<section id="wireshark">
+  <h2>Project: Wireshark network traffic analysis</h2>
+  <p class="status"><span class="dot"></span> In progress. Lessons are written; lab findings are added as I complete each lab.</p>
+  <p>A structured path from first capture to spotting suspicious patterns, built on Arch Linux with Wireshark, tshark and Python. Every lab records a prediction first, then what I actually observed.</p>
+
+  <h3>Learning path</h3>
+  <ol class="path">
+    <li><a href="https://github.com/misentropy/project/blob/main/projects/wireshark/lessons/00-setup-arch.md">Setup on Arch</a><span>capture without root</span></li>
+    <li><a href="https://github.com/misentropy/project/blob/main/projects/wireshark/lessons/01-interface-and-first-capture.md">Interface and first capture</a><span>read a packet layer by layer</span></li>
+    <li><a href="https://github.com/misentropy/project/blob/main/projects/wireshark/lessons/02-filters.md">Capture vs display filters</a><span>find what matters</span></li>
+    <li><a href="https://github.com/misentropy/project/blob/main/projects/wireshark/lessons/03-core-protocols.md">Core protocols</a><span>ARP, DNS, TCP, HTTP, TLS</span></li>
+    <li><a href="https://github.com/misentropy/project/blob/main/projects/wireshark/lessons/04-streams-and-statistics.md">Streams and statistics</a><span>broad to narrow</span></li>
+    <li><a href="https://github.com/misentropy/project/blob/main/projects/wireshark/lessons/05-tshark-and-automation.md">tshark and automation</a><span>command line and Python</span></li>
+    <li><a href="https://github.com/misentropy/project/blob/main/projects/wireshark/lessons/06-spotting-suspicious-traffic.md">Spotting suspicious traffic</a><span>scans, beacons, odd DNS</span></li>
+  </ol>
+
+  <h3>Lab write-ups</h3>
+  <div class="cards">
+    <article class="card">
+      <h4>Lab 01: DNS lookup</h4>
+      <p>Follow one query and response, including an NXDOMAIN.</p>
+      <p class="meta">Not yet completed</p>
+      <a href="https://github.com/misentropy/project/blob/main/projects/wireshark/labs/lab-01-dns.md">Lab plan</a>
+    </article>
+    <article class="card">
+      <h4>Lab 02: TCP handshake</h4>
+      <p>SYN, SYN-ACK, ACK, and what a closed port answers.</p>
+      <p class="meta">Not yet completed</p>
+      <a href="https://github.com/misentropy/project/blob/main/projects/wireshark/labs/lab-02-tcp-handshake.md">Lab plan</a>
+    </article>
+    <article class="card">
+      <h4>Lab 03: HTTP vs HTTPS</h4>
+      <p>What an observer sees in cleartext and in TLS.</p>
+      <p class="meta">Not yet completed</p>
+      <a href="https://github.com/misentropy/project/blob/main/projects/wireshark/labs/lab-03-http-vs-https.md">Lab plan</a>
+    </article>
+    <article class="card">
+      <h4>Lab 04: Port scan detection</h4>
+      <p>A scan of my own machine, seen from the defender's side.</p>
+      <p class="meta">Not yet completed</p>
+      <a href="https://github.com/misentropy/project/blob/main/projects/wireshark/labs/lab-04-port-scan.md">Lab plan</a>
+    </article>
+    <article class="card">
+      <h4>Lab 05: Python summary</h4>
+      <p>Automating capture analysis with tshark and Python.</p>
+      <p class="meta">Not yet completed</p>
+      <a href="https://github.com/misentropy/project/blob/main/projects/wireshark/labs/lab-05-python-summary.md">Lab plan</a>
+    </article>
+  </div>
+
+  <h3>Tools I wrote</h3>
+  <p><a href="https://github.com/misentropy/project/blob/main/projects/wireshark/scripts/pcap_summary.py"><code>pcap_summary.py</code></a>: summarises a capture (top talkers, protocols, DNS names, TLS server names, resets) using tshark. Has unit tests that run without any capture.</p>
+</section>
+
+<section id="rules">
+  <h2>How I work</h2>
+  <ul class="rules">
+    <li>Authorised, controlled environments only: my own network and devices.</li>
+    <li>Prediction first, then observation, then analysis.</li>
+    <li>Raw captures and TLS key logs are never published.</li>
+    <li>Findings are leads with alternative explanations, not verdicts.</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Not yet. For now, the best place to reach me is through <a href="https://github.com/misentropy">my GitHub profile</a>.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>Last updated by hand when I finish a lab. Source: <a href="https://github.com/misentropy/project">github.com/misentropy/project</a></p>
+</footer>
+
+</body>
+</html>

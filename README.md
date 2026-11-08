@@ -19,6 +19,12 @@ My background in radio communications has motivated me to explore the intersecti
     - Develop practical investigation skills
     - Explore SDR and RF analysis
 
+## Featured Project
+
+**[Wireshark: Network Traffic Analysis](projects/wireshark/README.md)** (in progress)
+A learning path from first capture to spotting suspicious traffic, with lab write-ups, cheatsheets and a Python helper built on tshark.
+Portfolio page: https://misentropy.github.io/project/
+
 ## Philosophy
 I believe in learning through practical experimentation, trial and error and documenting findings to improve technical skills.
 
